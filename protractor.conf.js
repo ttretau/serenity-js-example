@@ -66,8 +66,8 @@ exports.config = (function () {
             compiler: 'ts:ts-node/register'
         },
         commonCapabilities: {
-            'browserstack.user': process.env.BROWSERSTACK_USERNAME || 'XXX',
-            'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY || 'XXX',
+            'browserstack.user': process.env.npm_config_browserstack_username || 'XXX',
+            'browserstack.key': process.env.npm_config_browserstack_access_key || 'XXX',
             'build': 'protractor-browserstack',
             'name': 'single_test',
             'browserName': 'chrome',

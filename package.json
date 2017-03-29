@@ -6,11 +6,11 @@
   "scripts": {
     "clean": "rimraf public target",
     "postinstall": "npm run webdriver:update -- --standalone",
-    "pretest": "serenity update",
+    "prestart": "serenity update",
     "report": "serenity run",
     "lint": "npm run tslint \"src/**/*.ts\"",
     "tslint": "tslint",
-    "test": "failsafe clean protractor report",
+    "start": "failsafe clean e2etestk8s_browserstack report",
     "protractor": "protractor ./protractor.conf.js --params.seleniumAddress=",
     "e2etestk8s_browserstack": "protractor protractor.conf.js --params.threads=1 --params.seleniumAddress=http://hub-cloud.browserstack.com/wd/hub",
     "webdriver-manager": "webdriver-manager",

@@ -3,5 +3,5 @@
 
 ```bash
 $ yarn install
-$ npm run pretest
+$ npm start --BROWSERSTACK_USERNAME=yourUsername --BROWSERSTACK_ACCESS_KEY=yourAccessKey
 ```
