@@ -1865,9 +1865,9 @@ semver@~5.1.0:
   version "5.1.1"
   resolved semver-5.1.1.tgz#a3292a373e6f3e0798da0b20641b9a9c5bc47e19
 
-serenity-cli@^0.2.3:
-  version "0.2.3"
-  resolved serenity-cli-0.2.3.tgz#b3d26f86cd7ec40cdb1ec872ba6ea788b8045397
+serenity-cli@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/serenity-cli/-/serenity-cli-0.2.4.tgz#55c70a338ea21dc39096a4c295bc0cda5f65204c"
   dependencies:
     java-home "1.0.4"
     mkdirp "0.5.1"
@@ -1881,9 +1881,9 @@ serenity-cli@^0.2.3:
     winston "2.2.0"
     yargs "4.8.1"
 
-serenity-js@^1.2.1:
-  version "1.2.3"
-  resolved serenity-js-1.2.3.tgz#5351342ae7965f70d6f5e2566c2e56e606a20fc1
+serenity-js@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/serenity-js/-/serenity-js-1.3.0.tgz#4b95caa035f1b133a2d1210c7aac90e6ee0b552c"
   dependencies:
     "@types/graceful-fs" "2.0.29"
     "@types/lodash" "4.14.52"
