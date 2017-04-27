@@ -88,23 +88,7 @@ exports.config = (function () {
                 'platform': 'ANY',
                 'count': 1,
                 'shardTestFiles': false,
-                'maxInstances': 1,
-                'proxy': {
-                    'proxyType': 'manual',
-                    'httpProxy': 'http://XXX.de:9080',
-                    'sslProxy': 'http://XXX.de:9080',
-                    'noProxy': 'http://190.100.230.*,*.XXX.de,localhost,127.0.0.1',
-                },
-                'chromeOptions': {
-                    args: ['--no-sandbox', '--test-type=browser', 'incognito',
-                        'disable-extensions'],
-                    prefs: {
-                        'download': {
-                            'prompt_for_download': false,
-                            'default_directory': '/tmp/'
-                        }
-                    }
-                }
+                'maxInstances': 1
             },
         ],
 
