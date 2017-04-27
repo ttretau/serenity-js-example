@@ -50,6 +50,14 @@ var init = function (config) {
 };
 exports.config = (function () {
     return init({
+        serenity: {
+            stageCueTimeout: 180000,
+            crew:    [
+                crew.serenityBDDReporter(),
+                crew.photographer()
+            ],
+            dialect: 'cucumber',
+        },
         baseUrl: 'http://todomvc.com',
         seleniumAddress: 'http://selenium.k8s04.test1.XXX.de/wd/hub',
 
@@ -79,7 +87,7 @@ exports.config = (function () {
                 'browserName': 'chrome',
                 'platform': 'ANY',
                 'count': 1,
-                'shardTestFiles': true,
+                'shardTestFiles': false,
                 'maxInstances': 1,
                 'proxy': {
                     'proxyType': 'manual',
